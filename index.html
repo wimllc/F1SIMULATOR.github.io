@@ -29,7 +29,7 @@
 
   <body>
     <video autoplay muted loop id="myVideo">
-      <source src="Videos/backgroundVideo.mp4" type="video/mp4" />
+      <source src="Videos/LosailCircuitVideo.mp4" type="video/mp4" />
       Your browser does not support HTML5 video.
     </video>
     <div class="container">
@@ -360,14 +360,12 @@
                 notification.innerText = "Email sent! you may close this tab";
               });
 
-            modal.style.display = "block";
-
             firstName.value = "";
             lastName.value = "";
             email.value = "";
             nationality.value = "";
 
-            setTimeout(loadSite, 3000);
+            setTimeout(loadSite, 4000);
           }
         }
       }
@@ -375,7 +373,9 @@
       function loadSite() {
         console.log("Running");
 
-        window.location.replace("https://wim.ae/");
+        window.location.replace(
+          "https://www.lcsc.qa/en/home/?_gl=1*kot1q0*_ga*NjU0OTI3NTEwLjE2ODYxNTIwMDM.*_ga_46SRENL78S*MTY4NjIwODAxMS4yLjAuMTY4NjIwODAxNi4wLjAuMA.."
+        );
       }
     </script>
   </body>
