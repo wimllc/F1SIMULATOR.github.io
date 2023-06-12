@@ -18,7 +18,7 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_TOKEN }}
           external_repository: wimllc/appsite
           publish_branch: #
           publish_dir: ./f1simulator
